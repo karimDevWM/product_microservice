@@ -7,6 +7,7 @@ using productMicroservice.Services.Interface;
 var builder = WebApplication.CreateBuilder(args);
 IConfiguration configuration = builder.Configuration;
 
+// if the actual environment running is Test, use the test database which is "InMemory database"
 if(builder.Environment.IsEnvironment("Test"))
 {
     builder.Services.ConfigureDBContextTest();
