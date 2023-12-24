@@ -7796,11 +7796,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Karim\\Documents\\Simplon_WOJO_Alternance\\Simplon\\cours\\Abdoulaye\\PROJETS\\MICROSERVICES\\dotnet_microservices\\microservice_project\\productMicroservice\\productMicroservice.csproj",
+      "projectUniqueName": "C:\\Users\\Karim\\Documents\\Simplon_WOJO_Alternance\\Simplon\\cours\\Abdoulaye\\PROJETS\\MICROSERVICES\\dotnet_microservices\\microservice_project\\product_microservice\\productMicroservice.csproj",
       "projectName": "productMicroservice",
-      "projectPath": "C:\\Users\\Karim\\Documents\\Simplon_WOJO_Alternance\\Simplon\\cours\\Abdoulaye\\PROJETS\\MICROSERVICES\\dotnet_microservices\\microservice_project\\productMicroservice\\productMicroservice.csproj",
+      "projectPath": "C:\\Users\\Karim\\Documents\\Simplon_WOJO_Alternance\\Simplon\\cours\\Abdoulaye\\PROJETS\\MICROSERVICES\\dotnet_microservices\\microservice_project\\product_microservice\\productMicroservice.csproj",
       "packagesPath": "C:\\Users\\Karim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Karim\\Documents\\Simplon_WOJO_Alternance\\Simplon\\cours\\Abdoulaye\\PROJETS\\MICROSERVICES\\dotnet_microservices\\microservice_project\\productMicroservice\\obj\\",
+      "outputPath": "C:\\Users\\Karim\\Documents\\Simplon_WOJO_Alternance\\Simplon\\cours\\Abdoulaye\\PROJETS\\MICROSERVICES\\dotnet_microservices\\microservice_project\\product_microservice\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
