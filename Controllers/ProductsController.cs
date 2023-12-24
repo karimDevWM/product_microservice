@@ -10,36 +10,82 @@ namespace productMicroservice.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly IProductService productService;
-        public ProductsController(IProductService _productService)
+        private readonly IProductService _productService;
+        public ProductsController(IProductService productService)
         {
-            productService = _productService;
+            _productService = productService;
         }
         [HttpGet]
-        public IEnumerable<Product> ProductList()
+        public async Task<ActionResult> ProductList()
         {
-            var productList = productService.GetProductList();
-            return productList;
+            try
+            {
+                var products = await _productService.GetProductList();
+
+                return Ok(products);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    Error = ex.Message,
+                });
+            }
+
         }
         [HttpGet("{id}")]
-        public Product GetProductById(int id)
+        public async Task<ActionResult> GetProductByIdAsync(int productId)
         {
-            return productService.GetProductById(id);
+            var product = await _productService.GetProductByIdAsync(productId);
+            return Ok(product);
         }
         [HttpPost]
-        public Product AddProduct(Product product)
+        public async Task<ActionResult> CreateProductAsync(Product product)
         {
-            return productService.AddProduct(product);
+            try
+            {
+                var productAdded = await _productService.CreateProductAsync(product);
+                return Ok(productAdded);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    Error = ex.Message,
+                });
+            }
         }
         [HttpPut]
-        public Product UpdateProduct(Product product)
+        public async Task<ActionResult> UpdateProductAsync(Product product, int productId)
         {
-            return productService.UpdateProduct(product);
+            try
+            {
+                var productUpdated = await _productService.UpdateProductAsync(product, productId);
+                return Ok(productUpdated);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    Error = ex.Message,
+                });
+            }
         }
         [HttpDelete("{id}")]
-        public bool DeleteProduct(int id)
+        public async Task<ActionResult> DeleteProductAsync(int productId)
         {
-            return productService.DeleteProduct(id);
+            try
+            {
+                var productDeleted = await _productService.DeleteProductAsync(productId);
+                return Ok(productDeleted);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    Error = ex.Message,
+                });
+            }
         }
     }
 }

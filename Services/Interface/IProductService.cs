@@ -4,10 +4,10 @@ namespace productMicroservice.Services.Interface
 {
     public interface IProductService
     {
-        public IEnumerable<Product> GetProductList();
-        public Product GetProductById(int id);
-        public Product AddProduct(Product product);
-        public Product UpdateProduct(Product product);
-        public bool DeleteProduct(int Id);
+        Task<List<Product>> GetProductList();
+        Task<Product> GetProductByIdAsync(int productId);
+        Task<Product> CreateProductAsync(Product product);
+        Task<Product> UpdateProductAsync(Product product, int productId);
+        Task<Product> DeleteProductAsync(int productId);
     }
 }
