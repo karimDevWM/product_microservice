@@ -1,8 +1,5 @@
-using productMicroservice.Data;
 using productMicroservice.IoC.IoCApplication;
 using productMicroservice.IoC.IoCTest;
-using productMicroservice.Services;
-using productMicroservice.Services.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 IConfiguration configuration = builder.Configuration;

@@ -455,10 +455,11 @@ C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS
 C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\productMicroservice\obj\Debug\net6.0\productMicroservice.pdb
 C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\productMicroservice\obj\Debug\net6.0\productMicroservice.genruntimeconfig.cache
 C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\productMicroservice\obj\Debug\net6.0\ref\productMicroservice.dll
-C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\testhost.exe
 C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\testhost.dll
+C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\testhost.exe
 C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\appsettings.json
+C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\MvcTestingAppManifest.json
 C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\xunit.runner.reporters.netcoreapp10.dll
 C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\xunit.runner.utility.netcoreapp10.dll
@@ -468,7 +469,6 @@ C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS
 C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\nunit.engine.api.dll
 C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\nunit.engine.core.dll
 C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\testcentric.engine.metadata.dll
-C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\MvcTestingAppManifest.json
 C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\productMicroservice.exe
 C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\productMicroservice.deps.json
 C:\Users\Karim\Documents\Simplon_WOJO_Alternance\Simplon\cours\Abdoulaye\PROJETS\MICROSERVICES\dotnet_microservices\microservice_project\product_microservice\bin\Debug\net6.0\productMicroservice.runtimeconfig.json

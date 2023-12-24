@@ -1,5 +1,6 @@
 ﻿using productMicroservice.Data;
 using productMicroservice.Data.Repository;
+using productMicroservice.Data.Repository.Interface;
 using productMicroservice.Model;
 using productMicroservice.Services.Interface;
 
@@ -7,8 +8,8 @@ namespace productMicroservice.Services
 {
     public class ProductService : IProductService
     {
-        private readonly ProductRepository _productRepository;
-        public ProductService(ProductRepository productRepository)
+        private readonly IProductRepository _productRepository;
+        public ProductService(IProductRepository productRepository)
         {
             _productRepository = productRepository;
         }
