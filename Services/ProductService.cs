@@ -1,4 +1,5 @@
 ﻿using productMicroservice.Data;
+using productMicroservice.Data.Repository;
 using productMicroservice.Model;
 using productMicroservice.Services.Interface;
 
@@ -6,37 +7,50 @@ namespace productMicroservice.Services
 {
     public class ProductService : IProductService
     {
-        private readonly DbContextClass _dbContext;
-        public ProductService(DbContextClass dbContext)
+        private readonly ProductRepository _productRepository;
+        public ProductService(ProductRepository productRepository)
         {
-            _dbContext = dbContext;
+            _productRepository = productRepository;
         }
-        public IEnumerable<Product> GetProductList()
+        public async Task<List<Product>> GetProductList()
         {
-            return _dbContext.Products.ToList();
+            return await _productRepository.GetProductsAsync().ConfigureAwait(false);
         }
-        public Product GetProductById(int id)
+        public async Task<Product> GetProductByIdAsync(int productId)
         {
-            return _dbContext.Products.Where(x => x.ProductId == id).FirstOrDefault();
+            return await _productRepository.GetProductByIdAsync(productId);
         }
-        public Product AddProduct(Product product)
+        public async Task<Product> CreateProductAsync(Product product)
         {
-            var result = _dbContext.Products.Add(product);
-            _dbContext.SaveChanges();
-            return result.Entity;
+            var productAdded = await _productRepository.CreateProductAsync(product);
+
+            return productAdded;
         }
-        public Product UpdateProduct(Product product)
+        public async Task<Product> UpdateProductAsync(Product product, int productId)
         {
-            var result = _dbContext.Products.Update(product);
-            _dbContext.SaveChanges();
-            return result.Entity;
+            var productGet = await _productRepository.GetProductByIdAsync(productId).ConfigureAwait(false);
+            if (productGet == null)
+                throw new Exception($"Le produit avec cet identifiant {productId} n'existe pas");
+            productGet.ProductName = product.ProductName;
+            productGet.ProductPrice = product.ProductPrice;
+            productGet.ProductStock = product.ProductStock;
+            productGet.ProductDescription = product.ProductDescription;
+
+            await _productRepository.UpdateProductAsync(productGet).ConfigureAwait(false);
+
+            return productGet;
         }
-        public bool DeleteProduct(int Id)
+
+        public async Task<Product> DeleteProductAsync(int productId)
         {
-            var filteredData = _dbContext.Products.Where(x => x.ProductId == Id).FirstOrDefault();
-            var result = _dbContext.Remove(filteredData);
-            _dbContext.SaveChanges();
-            return result != null ? true : false;
+            var productGet = await _productRepository.GetProductByIdAsync(productId).ConfigureAwait(false);
+
+            if (productGet == null)
+                throw new Exception($"Le produit avec cet identifiant {productId} n'existe pas");
+
+            var productDeleted = await _productRepository.DeleteProductAsync(productGet).ConfigureAwait(false);
+
+            return productDeleted;
         }
     }
 }

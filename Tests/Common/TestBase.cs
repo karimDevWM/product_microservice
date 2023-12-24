@@ -19,7 +19,9 @@ namespace productMicroservice.Tests.Common
         public void SetupTest()
         {
             _serviceProvider = new ServiceCollection()
+                .AddLogging()
                 .ConfigureDBContextTest()
+                .ConfigureInjectionDependencyRepositoryTest()
                 .BuildServiceProvider();
 
             InitTestDatabase();
