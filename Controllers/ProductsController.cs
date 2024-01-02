@@ -71,6 +71,24 @@ namespace productMicroservice.Controllers
                 });
             }
         }
+
+        [HttpPatch]
+        public async Task<ActionResult> UpdatePatchProductAsync(Product product, int productId)
+        {
+            try
+            {
+                var productUpdated = await _productService.UpdateProductAsync(product, productId);
+                return Ok(productUpdated);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    Error = ex.Message,
+                });
+            }
+        }
+
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteProductAsync(int productId)
         {
