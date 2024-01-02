@@ -21,6 +21,12 @@ namespace productMicroservice.Services
         {
             return await _productRepository.GetProductByIdAsync(productId);
         }
+
+        public async Task<Product> GetProductByNameAsync(string name)
+        {
+            return await _productRepository.GetProductByNameAsync(name);
+        }
+
         public async Task<Product> CreateProductAsync(Product product)
         {
             var productAdded = await _productRepository.CreateProductAsync(product);
