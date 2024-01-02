@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "E2faGj6YDB3m7iw5iaPVmHsHOZZEuc/wh4iWfZD4lXTqJmbjxxxcO/s/Kq4uvTx+jHV+I2k1bZbPnUOcDFaKGA==",
+  "dgSpecHash": "i0AsTIV63DKo+8u83JwZq+mDKy4xa/m8EDq8gvI9DsBmhDVrRy8daHPmhyLVbjiPjRNog2NZdmQJAakdSqj7qQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Karim\\Documents\\Simplon_WOJO_Alternance\\Simplon\\cours\\Abdoulaye\\PROJETS\\MICROSERVICES\\dotnet_microservices\\microservice_project\\product_microservice\\productMicroservice.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Karim\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
+    "C:\\Users\\Karim\\.nuget\\packages\\coverlet.msbuild\\3.1.2\\coverlet.msbuild.3.1.2.nupkg.sha512",
     "C:\\Users\\Karim\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Karim\\.nuget\\packages\\microsoft.aspnetcore.mvc.testing\\6.0.7\\microsoft.aspnetcore.mvc.testing.6.0.7.nupkg.sha512",
     "C:\\Users\\Karim\\.nuget\\packages\\microsoft.aspnetcore.testhost\\6.0.7\\microsoft.aspnetcore.testhost.6.0.7.nupkg.sha512",
