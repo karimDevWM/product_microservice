@@ -27,6 +27,13 @@ namespace productMicroservice.Data.Repository
             return element;
         }
 
+        public async Task<Product> GetProductByNameAsync(string name)
+        {
+            var element = await _contextClass.Products.FirstOrDefaultAsync(product => product.ProductName == name).ConfigureAwait(false);
+
+            return element;
+        }
+
         public async Task<Product> CreateProductAsync(Product product)
         {
             var elementAdded = await _contextClass.Products.AddAsync(product).ConfigureAwait(false);

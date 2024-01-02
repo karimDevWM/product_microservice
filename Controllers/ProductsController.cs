@@ -39,6 +39,14 @@ namespace productMicroservice.Controllers
             var product = await _productService.GetProductByIdAsync(productId);
             return Ok(product);
         }
+
+        [HttpGet("{name}")]
+        public async Task<ActionResult> GetProductByNameAsync(string productName)
+        {
+            var product = await _productService.GetProductByNameAsync(productName);
+            return Ok(product);
+        }
+
         [HttpPost]
         public async Task<ActionResult> CreateProductAsync(Product product)
         {
@@ -57,23 +65,6 @@ namespace productMicroservice.Controllers
         }
         [HttpPut]
         public async Task<ActionResult> UpdateProductAsync(Product product, int productId)
-        {
-            try
-            {
-                var productUpdated = await _productService.UpdateProductAsync(product, productId);
-                return Ok(productUpdated);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new
-                {
-                    Error = ex.Message,
-                });
-            }
-        }
-
-        [HttpPatch]
-        public async Task<ActionResult> UpdatePatchProductAsync(Product product, int productId)
         {
             try
             {
